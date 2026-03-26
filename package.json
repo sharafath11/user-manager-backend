@@ -1,9 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec \"node --loader ts-node/esm --experimental-specifier-resolution=node\" src/index.ts"
   },
